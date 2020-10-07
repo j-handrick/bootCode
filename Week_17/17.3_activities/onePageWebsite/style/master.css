@@ -1,0 +1,147 @@
+/* Navigation */
+nav {
+  height: 50px;
+  background-color: lightblue;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px;
+  background-color: darkgrey;
+}
+
+.wrapper {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: lightgrey;
+}
+
+/* Left Container */
+.left {
+  float: left;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  background-color: lightblue;
+  width: 29%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.upperLeft {
+  background-color: darkBlue;
+  padding: 5px;
+}
+
+.img {
+  height: 200px;
+  width: auto;
+  float: center;
+  padding-top: 15px;
+}
+
+.zoom-within-container {
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+}
+
+.zoom-within-container img {
+  transition: transform .5s ease;
+}
+
+.zoom-within-container:hover img {
+  transform: scale(1.3);
+}
+
+.petName {
+  background-color: lightgrey;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.lowerLeft {
+  background-color: lightgrey;
+}
+
+.stats {
+  float: left;
+  margin: 5px 15px 15px 50px;
+}
+
+.list {
+  margin: 25px 15px 15px 25px;
+  text-align: left;
+  float: center;
+}
+
+/* Right Container */
+.right {
+  height: 100%;
+  float: left;
+  background-color: lightgreen;
+  width: 70%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.img2 {
+  height: 200px;
+  width: auto;
+  float: left;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.description {
+  padding: 15px;
+  margin-bottom: 35px;
+}
+
+.upperRight {
+  display: inline-block;
+  background-color: #c6c6c6;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin: 15px;
+  margin-top: 50px;
+
+}
+
+span {
+  color: red;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.lowerRight {
+  display: inline-block;
+  background-color: #c6c6c6;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  margin: 15px;
+  padding-bottom: 35px;
+}
+
+.morePhotos {
+  height: auto;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.column {
+  flex: 33.3%;
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+}

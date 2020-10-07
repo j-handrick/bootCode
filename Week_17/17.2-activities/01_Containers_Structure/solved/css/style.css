@@ -1,0 +1,150 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  height: 250px;
+  max-height: 500px;
+  background-image: url(../images/upsBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#pageTopic {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* TYPOGRAPHY */
+.typeContainer {
+  display: inline-block;
+  margin: 20px;
+}
+.large{
+  font-size: 66px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+.light {
+  font-weight: 100;
+}
+.regular {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.typography h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.typography h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.typography h3 {
+  font-size: 34px;
+  font-weight: 700;
+}
+.typography h4 {
+  font-size: 26px;
+}
+.fontType {
+  font-size: 30px;
+}
+/* PRIMARY COLORS  */
+.swatch {
+  border: 1px black solid;
+  height: 200px;
+  width: 170px;
+  border-radius: 7px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.hexCode {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.colorContainer {
+  display: inline-block;
+  margin: 15px;
+}
+.darkBlue {
+  background-color: #333366;
+}
+.darkGrey {
+  background-color: #545454;
+}
+.lightGrey {
+  background-color: #e3e3e3;
+}
+.white {
+  background-color: #FFFFFF;
+}
+.lightBlue {
+  background-color: #12a0f6;
+}
+.red {
+  background-color: #F84848;
+}
+.orange {
+  background-color: #FC7705;
+}
+.lightBlue {
+  background-color: #13A0F6;
+}
+.lightGreen {
+  background-color: #8ABE48;
+}
+
+/* UI ELEMENTS  */
+.button {
+  display: inline-block;
+  padding: 15px;
+  margin: 15px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  font-size: 14px;
+}
+.primary {
+  background-color: #2b459a;
+}
+.success {
+  background-color: #8ABE48;
+}
+.danger {
+  background-color: #F84848;
+}
+.warning {
+  background-color: #FC7705;
+}
+.info {
+  background-color: #0099fa;
+}
+.primaryActive {
+  background-color: #3a66b7;
+}
+.successActive {
+  background-color: #668c35;
+}
+.dangerActive {
+  background-color: #ad4848;
+}
+.warningActive {
+  background-color: #ba7a43;
+}
+.infoActive {
+  background-color: #4386ba;
+}
+.sectionHead {
+  border-bottom: 8px solid #DDDDDD;
+}
