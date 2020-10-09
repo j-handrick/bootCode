@@ -3,11 +3,43 @@ body {
 
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: flex;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    'featuredProduct featuredProduct'
+    'secondaryProduct CTA';
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'bookcases'
+    'bedroom'
+    'patio'
+    'couches'
+    'desks';
+  }
+}
+
 /* Grid CSS */
 #heroGrid {
   margin: 0px 5%;
   display: grid;
-  min-height: 500px;
+  min-height: 400px;
+  max-height: 600px;
   height: 70vh;
   grid-template-rows: 75% 25%;
   grid-template-columns: 75% 25%;
@@ -16,8 +48,6 @@ body {
     "featuredProduct CTA"
   ;
 }
-
-/* Category Grid CSS */
 #featuredProduct {
   grid-area: featuredProduct;
   background-image: url("./../images/furniture1.png");
@@ -33,7 +63,10 @@ body {
   justify-content: space-around;
   cursor: pointer;
   background-image: url("./../images/woodbg.png"), url("./../images/arrow-right.png");
+}
 
+#CTA:hover {
+  transform: scale(1.2);
 }
 
 
@@ -55,7 +88,73 @@ body {
   z-index: 1;
   padding: 10px 25px;
 }
+/* Category Grid CSS */
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
 
+#categoryGrid {
+margin: 0px 5%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 300px 300px 300px;
+row-gap: 5px;
+grid-template-areas:
+"bookcases bedroom couches"
+"patio patio couches"
+"desks desks desks";
+}
+#bookcases {
+  background-image: url("./../images/bookcases.png");
+}
+#bookcases:hover {transform: scale(1.05);}
+
+#bedroom {
+  background-image: url("./../images/beds.png");
+}
+#bedroom:hover {transform: scale(1.05);}
+
+#couches {
+  background-image: url("./../images/couch.png");
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+#couches:hover {transform: scale(1.05);}
+
+#patio {
+  background-image: url("./../images/patio.png");
+  grid-column: 1 / span 2;
+  background-position: left -700px;
+}
+#patio:hover {transform: scale(1.05);}
+
+#desks {
+  background-image: url("./../images/desks.png");
+  grid-column: 1 / span 3;
+  background-position: centern 50px;
+}
+#desks:hover {transform: scale(1.05);}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #ff6200;
+}
 /* Navigation CSS */
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
