@@ -158,6 +158,7 @@ h4 {
   margin: 0px 0px;
   color: #636364;
 }
+
 @media only screen and (max-width: 1000px) {
   #navigation {
     display: none;
@@ -166,6 +167,7 @@ h4 {
     margin-left: auto;
   }
 }
+
 @media only screen and (max-width: 600px) {
   #headline {
     position: static;
