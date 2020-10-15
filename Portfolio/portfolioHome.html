@@ -10,40 +10,58 @@
 <body>
   <div class="content--container">
 
-    <div id="nav--bar">
-      <div class="nav--item">
-        <a href="#home">Jake Handrick</a>
-        <p>Home</p>
+    <nav id="nav--bar">
+      <div class="nav--dropdown nav1">
+        <button class="nav--link" href="#Home">Jake Handrick</button>
+        <div class="dropdown--content">
+          <a class="nav--item" href="#Home">Home</a>
+        </div>
       </div>
-      <div class="nav--item">
-        <a href="#WhatIdo">What I do</a>
-        <p>UX Research</p>
-        <p>UI Design</p>
-        <p>Web Development</p>
-        <p>SEO</p>
+
+      <div class="nav--dropdown nav2">
+        <button class="nav--link" href="#WhatIdo">What I do</button>
+        <div class="dropdown--content">
+          <a class="nav--item" href="#WhatIdo">UX Research</a>
+          <a class="nav--item" href="#WhatIdo">UI Design</a>
+          <a class="nav--item" href="#WhatIdo">Web Development</a>
+          <a class="nav--item" href="#WhatIdo">SEO</a>
+        </div>
       </div>
-      <div class="nav--item">
-        <a href="#projects">Projects</a>
-        <p>Healthypeople.gov</p>
-        <p>Open Arms of MN</p>
-        <p>Reflection Sciences</p>
+
+      <div class="nav--dropdown nav3">
+        <button class="nav--link" href="#Projects">Projects</button>
+        <div class="dropdown--content">
+
+
+          <a class="nav--item" href="#Projects">Healthypeople.gov</a>
+          <a class="nav--item" href="#Projects">Open Arms of MN</a>
+          <a class="nav--item" href="#Projects">Reflection Sciences</a>
+        </div>
       </div>
-      <div class="nav--item">
-        <a href="#WhoIam">Who I am</a>
+
+      <div class="nav--dropdown nav4">
+        <button class="nav--link" href="WhoIam">Who I am</button>
       </div>
-    </div>
+    </nav>
+
     <div class="header">
       <h1>Welcome!</h1>
       <h2>I help people design & build web products that are right for them.</h2>
     </div>
-    <div class="quote">
-      <p>"If you want to go fast,<br>go alone. <br>If you want to go far,<br>go together."</p>
-      <p class="period">.</p><br>
-      <p class="period">.</p><br>
-      <p class="period">.</p><br>
-      <p class="connect">Drop me a line!</p><br>
-      <p>Let's go far together, quickly →</p>
+
+    <div id="connect--container">
+      <div class="quote">
+        <p>"If you want to go fast,<br>go alone. <br>If you want to go far,<br>go together."</p>
+        <p class="period">.</p><br>
+        <p class="period">.</p><br>
+        <p class="period">.</p>
+      </div><br>
+      <div class="connect">
+        <p class="connect--hover">Drop me a line!</p><br>
+        <p>Let's go far together, quickly →</p>
+      </div>
     </div>
+
   </div>
 </body>
 
