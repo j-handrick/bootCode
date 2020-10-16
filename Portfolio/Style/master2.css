@@ -1,12 +1,12 @@
 body {
   background: repeating-linear-gradient(
 to right,
-#0f0c0a,
+#fffaef,
+#696969 1px,
 #fffaef 1px,
-#0f0c0a 1px,
-#0f0c0a 235px
+#fffaef 235px
 );
-  background-color: #0f0c0a;
+  background-color: #fffaef;
   justify-content: center;
   align-items: center;
   width: auto;
@@ -39,7 +39,7 @@ to right,
 }
 
 .nav--link {
-  color: #ebc67f;
+  color: #696969;
   font-family: raleway, sans-serif;
   font-weight: 150;
   font-size: 1rem;
@@ -76,7 +76,7 @@ to right,
   display: block;
   }*/
 h1 {
-  color: #fffaef;
+  color: #0f0c0a;
   font-family: piazzolla, serif;
   font-weight: 500;
   font-size: 4rem;
@@ -85,6 +85,7 @@ h1 {
   text-align: center;
   padding-top: 10%;
 }
+
 
 h2 {
   color: #696969;
@@ -105,7 +106,7 @@ h2 {
 }
 
 .quote {
-  color: #ebc67f;
+  color: #0f0c0a;
   font-family: raleway, sans-serif;
   font-weight: 150;
   font-size: 1rem;
@@ -118,19 +119,19 @@ h2 {
 }
 
 .period {
-  color: #ebc67f;
+  color: #0f0c0a;
   font-family: piazzolla, serif;
   font-weight: 150;
   font-size: 3rem;
   font-style: regular;
   margin: 0 auto;
   height: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   width: 0 auto;
 }
 
 .connect {
-  color: #ebc67f;
+  color: #0f0c0a;
   font-family: raleway, sans-serif;
   font-weight: 150;
   font-size: 1rem;
@@ -141,11 +142,10 @@ h2 {
   line-height: .2rem;
   padding-bottom: 50px;
   cursor: pointer;
-
 }
 
 .connect--hover {
-  font-style: italic;
+  font-style: regular;
 }
 
 .connect--hover:hover {
