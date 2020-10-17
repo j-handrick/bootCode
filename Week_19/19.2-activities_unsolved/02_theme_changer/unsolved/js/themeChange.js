@@ -14,3 +14,5 @@ console.log("---> Just click THIS elemnet with class themChange: \n", this)
   }
 
 });
+
+//or:
