@@ -1,0 +1,39 @@
+// container width
+$mainWidth:      100%;
+
+// container background color
+$mainBackground: #fffaef;
+
+/* navbar */
+
+// background color of the nav bar
+$navbarBackgroundColor: #fffaef;
+
+// height
+$navbarHeight:          100px;
+
+// CSS margin-top
+$navMarginTop:          5;
+
+// CSS margin-bottom
+$navMarginBottom:       10px;
+
+/* navbar items */
+
+// CSS margin-top
+$navbarItemMarginTop:    15px;
+
+// CSS margin-right
+$navbarItemMarginRight:  5px;
+
+// CSS margin-bottom
+$navbarItemMarginBottom: 15px;
+
+// CSS margin-left
+$navbarItemMarginLeft:   5px;
+
+// border color
+$lineColor: rgba(162, 162, 162, 1);
+
+// arrow size
+$arrowSize: 7px;

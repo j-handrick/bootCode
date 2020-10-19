@@ -4,7 +4,7 @@ to right,
 #0f0c0a,
 #fffaef 1px,
 #0f0c0a 1px,
-#0f0c0a 235px
+#0f0c0a 1px
 );
   background-color: #0f0c0a;
   justify-content: center;
@@ -40,7 +40,7 @@ to right,
 
 .nav--link {
   color: #ebc67f;
-  font-family: raleway, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 150;
   font-size: 1rem;
   font-style: regular;
@@ -62,14 +62,46 @@ to right,
 
 .nav--item {
   color: #fffaef;
-  font-family: raleway, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 150;
   font-size: 1rem;
   font-style: regular;
   float: none;
   padding: 10px 15px;
   text-align: center;
-  display: block;
+  display: flex;
+}
+
+.theme--change {
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.dark {
+  color: #ebc67f;
+  background-color: #0f0c0a;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  font-family: montserrat;
+  font-style: italic;
+  cursor: pointer;
+}
+.light {
+  color: #696969;
+  background-color: #fffaef;
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+  font-family: montserrat;
+  font-style: italic;
+  cursor: pointer;
 }
 
 /*.nav--link:hover .dropdown--content {
@@ -77,7 +109,7 @@ to right,
   }*/
 h1 {
   color: #fffaef;
-  font-family: piazzolla, serif;
+  font-family: gravitas, serif;
   font-weight: 500;
   font-size: 4rem;
   display: grid;
@@ -86,15 +118,23 @@ h1 {
   padding-top: 10%;
 }
 
+
+
 h2 {
   color: #696969;
-  font-family: raleway, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 200;
   font-size: 2rem;
   font-style: italic;
   display: grid;
   justify-content: center;
   text-align: center;
+}
+
+footer{
+  background-color: #0f0c0a;
+  width: 100%;
+  height: ;
 }
 
 .connect--container {
@@ -106,7 +146,7 @@ h2 {
 
 .quote {
   color: #ebc67f;
-  font-family: raleway, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 150;
   font-size: 1rem;
   font-style: italic;
@@ -119,7 +159,7 @@ h2 {
 
 .period {
   color: #ebc67f;
-  font-family: piazzolla, serif;
+  font-family: gravitas, serif;
   font-weight: 150;
   font-size: 3rem;
   font-style: regular;
@@ -131,7 +171,7 @@ h2 {
 
 .connect {
   color: #ebc67f;
-  font-family: raleway, sans-serif;
+  font-family: montserrat, sans-serif;
   font-weight: 150;
   font-size: 1rem;
   font-style: regular;
@@ -145,7 +185,7 @@ h2 {
 }
 
 .connect--hover {
-  font-style: italic;
+  font-style: ;
 }
 
 .connect--hover:hover {

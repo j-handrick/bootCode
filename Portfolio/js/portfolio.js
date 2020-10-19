@@ -1,13 +1,18 @@
-$('.theme--change').on('click', function() {
+// PRELOADER
+function fade() {
+  $('.preloader').fadeOut('slow')
+};
 
-// SHOWS WHAT 'THIS' IS IN REFERENCE TO
-console.log("---> Just click THIS elemnet with class themChange: \n", this)
+setTimeout(fade, 3000);
 
-  if ($(this).hasClass('dark')) {
-    $('#theme').attr('href', 'css/master.css')
-  }
-  else if ($(this).hasClass('light')) {
-    $('#theme').attr('href', 'css/master2.css')
-  }
+//menu
 
-});
+
+  $('.navButton').on('click', function(){
+    if($('.navButton').text() == '✖'){
+      $('.navButton').text('☰');
+    } else {
+      $('.navButton').text('✖')
+    }
+    $('.navList').toggle('slow');
+  });
