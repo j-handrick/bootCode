@@ -55,15 +55,16 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
+
   .navigation ul {
     flex-direction: column;
     align-content: center;
-    justify-content: center;
     background-color: #fffaef;
   }
 
   .navigation li {
     margin: 0;
+    text-align: center;
   }
   .navigation a {
     width: 100vw;
@@ -115,11 +116,19 @@ h2 {
 }
 
 /* PROJECTS */
+#projects {
+display: flex;
+justify-content: space-around;
+align-content: center;
+padding-top: 50vh;
+}
+
 .project--container {
 width: 10rem;
 height: 20rem;
-align-content: center;
 justify-content: space-around;
+align-content: flex-end;
+background-color: #fffaef;
 }
 
 .projList {
@@ -128,9 +137,12 @@ justify-content: space-around;
 
 .project--description {
   text-align: center;
+  background-color: #696969;
 }
 .project--description img {
-  align-content: flex-start;
+  height: 5rem;
+  width: 10rem;
+
 }
 
 @media only screen (max-width: 500px) {
