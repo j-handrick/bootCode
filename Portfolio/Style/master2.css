@@ -79,7 +79,7 @@ nav {
     border: none;
     outline: none;
     cursor: pointer;
-    text-align: center;
+    width: 100vw;
   }
 }
 
@@ -87,6 +87,7 @@ nav {
 .header {
   display: grid;
 }
+
 h1 {
   color: #fffaef;
   font-family: "Playfair Display", serif;
@@ -101,7 +102,6 @@ h1 {
   background-color: none;
 }
 
-
 h2 {
   color: #fffaef;
   background-color: none;
@@ -115,52 +115,26 @@ h2 {
 }
 
 /* PROJECTS */
-.project--main {
-  padding-top: 25vw;
-  justify-content: center;
-  width: 100vw;
-  background-color: #696969;
-  margin-top: 0;
+.project--container {
+width: 10rem;
+height: 20rem;
+align-content: center;
+justify-content: space-around;
 }
 
-.project--main ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+.projList {
   text-decoration: none;
 }
 
-.project--list {
-  height: 20vh;
-  width: 10vw;
+.project--description {
+  text-align: center;
 }
-.project--list a {
-  text-decoration: none;
-}
-
-.project--description h2 {
-  text-decoration: none;
-  justify-content: center;
-
-}
-.project--description p {
-    justify-content: center;
-    text-decoration: none;
+.project--description img {
+  align-content: flex-start;
 }
 
 @media only screen (max-width: 500px) {
-  .project--main ul {
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    background-color: #fffaef;
-  }
-  .project--list {
-    width: 100vw;
-  }
+
 
 }
 
