@@ -1,8 +1,11 @@
 body {
-  background-image: url('images/StandingDesert.jpeg');
+  background: url() no-repeat;
+  background-color: #0f0c0a;
+  background-size: auto;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100vw;
+  margin: 0;
 }
 
 .content--container {
@@ -19,40 +22,32 @@ body {
 nav {
   width: 100vw;
   justify-content: flex-start;
-  background-color: #ebc67f;
+  background-color: none;
   margin-top: 0;
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .navigation li {
   list-style-type: none;
-  margin: 0 2vw;
-  font-size: 3vh;
-  align-items: center;
-  justify-content: flex-start;
+  margin: 0 1vw;
+  font-size: 2vh;
 }
 
 .navigation a {
   text-decoration: none;
-  color: #0f0c0a;
-  font-family:   sans-serif;
-  padding: 1vw;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.navigation a:hover{
   color: #fffaef;
+  font-family: 'Roboto Slab',sans-serif;
+  font-weight: 250;
+  padding: 1vw;
+}
+.navigation a:hover{
+  font-weight: 350;
 }
 
 .navigation ul {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
 }
 
 .navigation button {
@@ -62,22 +57,28 @@ nav {
 @media only screen and (max-width: 500px) {
   .navigation ul {
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #fffaef;
   }
+
   .navigation li {
     margin: 0;
   }
   .navigation a {
+    width: 100vw;
     display: block;
+    color: #0f0c0a;
   }
+
   .navigation button {
     display: block;
     padding: 2vw;
     font-size: 3vw;
-    background-color: #ebc67f;
+    background-color: #fffaef;
     border: none;
     outline: none;
     cursor: pointer;
-    align-self: center;
     text-align: center;
   }
 }
@@ -87,27 +88,24 @@ nav {
   display: grid;
 }
 h1 {
-  color: #0f0c0a;
-  font-family: "Gravitas One", serif;
+  color: #fffaef;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 4rem;
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
-  background-color: #fffaef;
+  background-color: none;
 }
 
 
 h2 {
-  color: #696969;
-  background-color: #fffaef;
-  font-family: sans-serif;
+  color: #fffaef;
+  background-color: none;
+  font-family: 'Roboto Slab', serif;
   font-weight: 200;
   font-size: 2rem;
   font-style: regular;
@@ -116,57 +114,106 @@ h2 {
   text-align: center;
 }
 
-.header p {
-  color: #ebc67f;
-  font-family:   sans-serif;
-  font-weight: 200;
-  font-size: 1rem;
-  font-style: italic;
-  text-align: center;
-  display: flex;
+/* PROJECTS */
+.project--main {
+  padding-top: 25vw;
   justify-content: center;
-  margin-bottom: 150px;
-  padding-bottom: 250px;
+  width: 100vw;
+  background-color: #696969;
+  margin-top: 0;
+}
+
+.project--main ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.project--list {
+  height: 20vh;
+  width: 10vw;
+}
+.project--list a {
+  text-decoration: none;
+}
+
+.project--description h2 {
+  text-decoration: none;
+  justify-content: center;
+
+}
+.project--description p {
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media only screen (max-width: 500px) {
+  .project--main ul {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #fffaef;
+  }
+  .project--list {
+    width: 100vw;
+  }
 
 }
 
-footer{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER:  footer{
   background-color: #ebc67f;
+  margin-bottom: 0;
   width: 100vw;
   height: auto;
   margin-bottom: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
-
-
 .quote {
   color: #0f0c0a;
-  font-family:   sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 200;
   font-size: 1rem;
   font-style: italic;
-  text-align: left;
+  text-align: center;
+  align-content: flex-start;
+  justify-content: center;
 }
-
 .connect {
-  align-content: flex-end;
-  justify-content: flex-end;
+  align-content: flex-start;
+  justify-content: center;
   color: #0f0c0a;
-  font-family:   sans-serif;
+  font-family:  'Roboto Slab', serif;
   font-weight: 200;
   font-size: 1rem;
   font-style: regular;
-  text-align: right;
+  text-align: center;
   padding-right: 50px;
 }
-
-
 footer a:hover {
   font-weight: 500;
   cursor: pointer;
   padding-right: 10px;
-}
+}*/
 
 
 
