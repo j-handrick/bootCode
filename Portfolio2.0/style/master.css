@@ -1,1 +1,65 @@
+body {
+  background: #0f0c0a;
+  color: #fffaef;
+}
+.nav {
+  padding-top: .3em;
+  padding-bottom: .2em;
+  margin-bottom: 0;
+}
+.nav a {
+    color: #fffaef;
+}
 
+.jumbotron {
+  background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BackgroundMask5.png");
+  background-position: center;
+  height: 90vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-size: cover;
+
+}
+.jumbotron h1 {
+  text-align: center;
+  margin-top: 4.8em;
+}
+.jumbotron p {
+  text-align: center;
+}
+
+.container-fluid {
+  display: flex;
+  width: 100vw;
+}
+.row {
+  justify-content: space-around;
+}
+
+.cardContainer {
+display: flex;
+padding-top: 1em;
+text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  .nav {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BW/StandingDesert.jpeg") center;
+    height: 90vh;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .nav {
+text-align: center;
+  }
+
+}
