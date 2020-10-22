@@ -1,0 +1,15 @@
+body {
+  background: #fffaef;
+
+}
+/* NAVIGATION */
+.navbar {
+  background-color: #fffaef;
+}
+.nav-link {
+    font-family: 'roboto slab', serif;
+    font-weight: 200;
+}
+.navbar-brand {
+  font-family: 'Playfair display';
+}

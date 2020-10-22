@@ -1,0 +1,38 @@
+body {
+  background: #0f0c0a;
+
+}
+/* NAVIGATION */
+.navbar {
+  background-color: #fffaef;
+}
+.nav-link {
+    font-family: 'roboto slab', serif;
+    font-weight: 200;
+}
+.navbar-brand {
+  font-family: 'Playfair display';
+}
+.header {
+  margin-top: 5em;
+}
+h1 {
+  text-align: center;
+  margin-top: 5em;
+  font-family: "Playfair Display", serif;
+  color: #0f0c0a;
+}
+
+p {
+  text-align: center;
+  font-family: 'roboto slab', serif;
+  font-size: 1.3rem;
+  color: #696969;
+}
+.card {
+  display: block;
+  text-align: center;
+  padding: 3%;
+  margin: 5% auto;
+  width: 70%;
+}

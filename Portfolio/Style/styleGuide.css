@@ -1,150 +1,233 @@
+
 body {
-  font-family: 'Open Sans', sans-serif;
-}
-.header {
-  height: 250px;
-  max-height: 500px;
-  background-image: url(../images/upsBackground.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-#pageTopic {
+  background: black;
+  height: 100vh;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  overflow: hidden;
   text-align: center;
-  font-size: 14px;
-  font-weight: 900;
 }
 
-/* TYPOGRAPHY */
-.typeContainer {
-  display: inline-block;
-  margin: 20px;
-}
-.large{
-  font-size: 66px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-}
-.light {
-  font-weight: 100;
-}
-.regular {
-  font-weight: 500;
-}
-.bold {
-  font-weight: 700;
-}
-.typography h1 {
-  font-size: 50px;
-  font-weight: 900;
-}
-.typography h2 {
-  font-size: 42px;
-  font-weight: 700;
-}
-.typography h3 {
-  font-size: 34px;
-  font-weight: 700;
-}
-.typography h4 {
-  font-size: 26px;
-}
-.fontType {
-  font-size: 30px;
-}
-/* PRIMARY COLORS  */
-.swatch {
-  border: 1px black solid;
-  height: 200px;
-  width: 170px;
-  border-radius: 7px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.hexCode {
-  padding: 15px;
-  text-align: center;
-  border: 1px solid black;
-  border-top: none;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-}
-.colorContainer {
-  display: inline-block;
-  margin: 15px;
-}
-.darkBlue {
-  background-color: #333366;
-}
-.darkGrey {
-  background-color: #545454;
-}
-.lightGrey {
-  background-color: #e3e3e3;
-}
-.white {
-  background-color: #FFFFFF;
-}
-.lightBlue {
-  background-color: #12a0f6;
-}
-.red {
-  background-color: #F84848;
-}
-.orange {
-  background-color: #FC7705;
-}
-.lightBlue {
-  background-color: #13A0F6;
-}
-.lightGreen {
-  background-color: #8ABE48;
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -3;
+  }
+  &:before {
+    right: 0;
+    bottom: -19;
+    height: 30em;
+    width: 30em;
+    border-radius: 30em;
+    background: linear-gradient($blue, $purple);
+    align-self: flex-end;
+    animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+  }
+  &:after {
+    $circle-unit: 10em;
+    top: 0;
+    left: 30;
+    height: $circle-unit;
+    width: $circle-unit;
+    border-radius: $circle-unit;
+    background: linear-gradient($blue, $purple);
+    animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
+  }
+
+  &__text-wrapper {
+    position: relative;
+    padding: 2em;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      $circle-unit: 13em;
+      z-index: -1;
+      top: -3em;
+      right: -3em;
+      width: $circle-unit;
+      height: $circle-unit;
+      opacity: 0.7;
+      border-radius: $circle-unit;
+      background: linear-gradient($ltblue, $purple);
+      animation: rotation 7s linear infinite;
+    }
+
+    &:after {
+      $circle-unit: 20em;
+      z-index: -1;
+      bottom: -#{$circle-unit};
+      width: $circle-unit;
+      height: $circle-unit;
+      border-radius: $circle-unit;
+      background: linear-gradient($magenta, $purple);
+      animation: rotation 7s linear infinite;
+    }
+  }
 }
 
-/* UI ELEMENTS  */
-.button {
-  display: inline-block;
-  padding: 15px;
-  margin: 15px;
-  width: 150px;
-  text-align: center;
-  color: white;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  font-size: 14px;
+.arrow {
+  z-index: 1000;
+  opacity: 0.5;
+  position: absolute;
+
+  &--top {
+    top: 0;
+    left: -5em;
+  }
+
+  &--bottom {
+    bottom: 0;
+    right: 3em;
+  }
 }
-.primary {
-  background-color: #2b459a;
+
+.circle {
+  transform: translate(50%, -50%) rotate(0deg);
+  transform-origin: center;
+
+  &--ltblue {
+    $circle-unit: 20em;
+    height: $circle-unit;
+    width: $circle-unit;
+    border-radius: $circle-unit;
+    background: linear-gradient($ltblue, $blue);
+  }
 }
-.success {
-  background-color: #8ABE48;
+
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: pink;
 }
-.danger {
-  background-color: #F84848;
+
+.dotted-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  animation: rotation 38s linear infinite;
 }
-.warning {
-  background-color: #FC7705;
+
+// animations
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 15s ease-in-out alternate infinite;
 }
-.info {
-  background-color: #0099fa;
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
 }
-.primaryActive {
-  background-color: #3a66b7;
+
+.item-to {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
 }
-.successActive {
-  background-color: #668c35;
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: ease;
 }
-.dangerActive {
-  background-color: #ad4848;
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
 }
-.warningActive {
-  background-color: #ba7a43;
+
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease;
 }
-.infoActive {
-  background-color: #4386ba;
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.sectionHead {
-  border-bottom: 8px solid #DDDDDD;
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// gradient fade
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade {
+  from {
+    transform: translate(10%, -10%) rotate(0deg);
+  }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes gradient-fade-alt {
+  from {
+    transform: translate(-20%, 20%) rotate(0deg);
+  }
+  to {
+    transform: translate(-60%, 60%) rotate(360deg);
+  }
 }

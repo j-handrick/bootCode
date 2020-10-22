@@ -1,65 +1,134 @@
 body {
-  background: #0f0c0a;
-  color: #fffaef;
+  background: #fffaef;
+
 }
-.nav {
-  padding-top: .3em;
-  padding-bottom: .2em;
-  margin-bottom: 0;
+/* NAVIGATION */
+.navbar {
+  background-color: #fffaef;
 }
-.nav a {
-    color: #fffaef;
+.nav-link {
+    font-family: 'roboto slab', serif;
+    font-weight: 200;
 }
 
+.navbar-brand {
+  font-family: 'Playfair display';
+}
+/* HEADER */
 .jumbotron {
   background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BackgroundMask5.png");
   background-position: center;
-  height: 90vh;
+  height: 99vh;
   padding-top: 1em;
   padding-bottom: 1em;
   background-size: cover;
-
+  border-radius: 0;
+  overflow: hidden;
 }
 .jumbotron h1 {
   text-align: center;
-  margin-top: 4.8em;
+  margin-top: 5.2em;
+  font-family: "Playfair Display", serif;
+  color: #fffaef;
 }
 .jumbotron p {
   text-align: center;
+  font-family: 'roboto slab', serif;
+  color: #fffaef;
+}
+/* BOUNCING ARROW -idk how this works but it just does... */
+a {color: #fffaef;}
+a:hover {color: #49A0B5;}
+
+.arrow {
+  text-align: center;
+  margin-top: 17%;
 }
 
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*PAGE ANIMATIONS*/
+/* PROJECT CARDS */
 .container-fluid {
   display: flex;
   width: 100vw;
 }
 .row {
-  justify-content: space-around;
+  margin: 20vh auto;
 }
-
 .cardContainer {
 display: flex;
 padding-top: 1em;
 text-align: center;
 }
+.cardContainer a {
+  text-decoration: none;
+}
+.cardContainer a:hover {
+  color: #49A0B5;
 
+}
+.card-title {
+  color: #fffaef;
+  font-family: "Playfair Display", serif;
+}
+.card-body {
+  color: #fffaef;
+  background-color: #0f0c0a;
+}
+.card-subtitle {
+    font-family: 'roboto slab', serif;
+    font-weight: 400;
+}
+.card-text {
+    font-family: 'roboto slab', serif;
+    font-weight: 200;
+}
 
+/* FOOTER */
+footer nav {
+  display: flex;
+  width: 100vw;
+}
+footer span {
+
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+footer h5 {
+
+  font-style: regular;
+  font-weight: 200;
+  font-family: "roboto slab", serif;
+  margin-left: 1em;
+}
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
   .nav {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 }
 
 @media (max-width: 768px) {
   .jumbotron {
     background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BW/StandingDesert.jpeg") center;
-    height: 90vh;
+    height: 95vh;
     padding-top: 1em;
     padding-bottom: 1em;
   }
-  .nav {
-text-align: center;
-  }
-
 }
