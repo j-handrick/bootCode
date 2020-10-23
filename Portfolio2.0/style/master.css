@@ -16,12 +16,22 @@ body {
 .navbar-brand {
   font-family: 'Playfair display';
 }
+
+.dropdown-menu a:hover {
+  color: #49A0B5;
+  background-color: #fffaef;
+}
+
 .linkedIn:hover {
-   background-color: #49A0B5; border-radius: 5px;
+  background-color: #49A0B5;
+  border-radius: 5px;
 }
+
 .instagram:hover {
-   background-color: #49A0B5; border-radius: 10px;
+  background-color: #49A0B5;
+  border-radius: 10px;
 }
+
 /* HEADER */
 .jumbotron {
   background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BackgroundMask5.png");
@@ -39,12 +49,15 @@ body {
   margin-top: 5.2em;
   font-family: "Playfair Display", serif;
   color: #fffaef;
-  cursor: arrow;
+  cursor: none;
 }
 
 .jumbotron h1:hover {
   color: #49A0B5;
-  cursor: none;
+}
+
+.jumbotron span {
+  color: #49A0B5;
 }
 
 .jumbotron p {
@@ -100,30 +113,34 @@ h1 {
   color: #0f0c0a;
   cursor: arrow;
 }
+
 .container-fluid {
   display: flex;
   width: 100vw;
 }
 
 .row {
-  margin: 15vh auto;
+  margin: 10vh auto;
 }
 
 .cardContainer {
   display: flex;
   text-align: center;
   justify-content: center;
+    border-radius: 10px;
+}
+.cardContainer:hover {
+  border: 3px solid #fffaef;
 }
 
 .cardContainer a {
   text-decoration: none;
 }
 
-.cardContainer:hover {
+.cardContainer a:hover {
   color: #49A0B5;
-  border: 3px solid #fffaef;
-  border-radius: 10px;
 }
+
 .cardContainer img {
   height: 45%;
 }
