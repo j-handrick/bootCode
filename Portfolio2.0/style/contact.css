@@ -36,3 +36,27 @@ p {
   margin: 5% auto;
   width: 70%;
 }
+/* FOOTER */
+footer nav {
+  display: flex;
+  width: 100vw;
+}
+footer span {
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+footer span:hover {
+  color: #fffaef;
+  cursor: auto;
+}
+footer a {
+  color: #fffaef;
+  font-style: regular;
+  font-weight: 100;
+  font-family: "playfair display", serif;
+  margin-left: 1em;
+}
+footer .CTA:hover {
+  color: #49A0B5;
+  cursor: pointer;
+}

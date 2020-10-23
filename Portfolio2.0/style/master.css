@@ -30,19 +30,29 @@ body {
   margin-top: 5.2em;
   font-family: "Playfair Display", serif;
   color: #fffaef;
+  cursor: pointer;
 }
+.jumbotron h1:hover {
+  color: #49A0B5;
+}
+
 .jumbotron p {
   text-align: center;
   font-family: 'roboto slab', serif;
   color: #fffaef;
+  cursor: pointer;
 }
+.jumbotron p:hover {
+  color: #0f0c0a;
+}
+
 /* BOUNCING ARROW -idk how this works but it just does... */
 a {color: #fffaef;}
 a:hover {color: #49A0B5;}
 
 .arrow {
   text-align: center;
-  margin-top: 17%;
+  margin-top: 21%;
 }
 
 .bounce {
@@ -54,7 +64,7 @@ a:hover {color: #49A0B5;}
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-35px);
   }
   60% {
     transform: translateY(-15px);
@@ -62,7 +72,7 @@ a:hover {color: #49A0B5;}
 }
 
 /*PAGE ANIMATIONS*/
-/* PROJECT CARDS */
+PROJECT CARDS
 .container-fluid {
   display: flex;
   width: 100vw;
@@ -74,13 +84,15 @@ a:hover {color: #49A0B5;}
 display: flex;
 padding-top: 1em;
 text-align: center;
+justify-content: center;
 }
 .cardContainer a {
   text-decoration: none;
 }
-.cardContainer a:hover {
+.cardContainer:hover {
   color: #49A0B5;
-
+  border: 2px solid #49A0B5;
+  border-radius: 10px;
 }
 .card-title {
   color: #fffaef;
@@ -98,23 +110,29 @@ text-align: center;
     font-family: 'roboto slab', serif;
     font-weight: 200;
 }
-
 /* FOOTER */
 footer nav {
   display: flex;
   width: 100vw;
 }
 footer span {
-
   font-style: italic;
   font-family: "Playfair Display", serif;
 }
-footer h5 {
-
+footer span:hover {
+  color: #fffaef;
+  cursor: auto;
+}
+footer a {
+  color: #fffaef;
   font-style: regular;
-  font-weight: 200;
-  font-family: "roboto slab", serif;
-  margin-left: 1em;
+  font-weight: 100;
+  font-family: "playfair display", serif;
+}
+
+footer .CTA:hover {
+  color: #49A0B5;
+  cursor: pointer;
 }
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
@@ -123,7 +141,6 @@ footer h5 {
     margin-right: 15vw;
   }
 }
-
 @media (max-width: 768px) {
   .jumbotron {
     background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BW/StandingDesert.jpeg") center;
@@ -131,4 +148,5 @@ footer h5 {
     padding-top: 1em;
     padding-bottom: 1em;
   }
+
 }
