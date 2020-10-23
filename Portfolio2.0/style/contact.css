@@ -13,6 +13,12 @@ body {
 .navbar-brand {
   font-family: 'Playfair display';
 }
+.linkedIn:hover {
+   background-color: #49A0B5; border-radius: 5px;
+}
+.instagram:hover {
+   background-color: #49A0B5; border-radius: 10px;
+}
 .header {
   margin-top: 5em;
 }
@@ -59,4 +65,5 @@ footer a {
 footer .CTA:hover {
   color: #49A0B5;
   cursor: pointer;
+    text-decoration: none;
 }
