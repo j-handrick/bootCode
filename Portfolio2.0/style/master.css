@@ -9,7 +9,7 @@ body {
 }
 
 .nav-link {
-  font-family: 'roboto slab', serif;
+  font-family: 'montserrat', serif;
   font-weight: 200;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .jumbotron p {
   text-align: center;
-  font-family: 'roboto slab', serif;
+  font-family: 'montserrat', serif;
   color: #fffaef;
   cursor: arrow;
 }
@@ -157,12 +157,12 @@ h1 {
 }
 
 .card-subtitle {
-  font-family: 'roboto slab', serif;
+  font-family: 'montserrat', serif;
   font-weight: 400;
 }
 
 .card-text {
-  font-family: 'roboto slab', serif;
+  font-family: 'montserrat', serif;
   font-weight: 200;
 }
 
@@ -186,7 +186,7 @@ footer a {
   color: #fffaef;
   font-style: regular;
   font-weight: 100;
-  font-family: "playfair display", serif;
+  font-family: "montserrat", sans-serif;
 }
 
 footer .CTA:hover {

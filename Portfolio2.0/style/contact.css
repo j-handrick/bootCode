@@ -7,7 +7,7 @@ body {
   background-color: #fffaef;
 }
 .nav-link {
-    font-family: 'roboto slab', serif;
+    font-family: 'montserrat', serif;
     font-weight: 200;
 }
 .navbar-brand {
@@ -35,7 +35,7 @@ h1 {
 
 p {
   text-align: center;
-  font-family: 'roboto slab', serif;
+  font-family: 'montserrat', serif;
   font-size: 1.3rem;
   color: #696969;
 }
@@ -63,7 +63,7 @@ footer a {
   color: #fffaef;
   font-style: regular;
   font-weight: 100;
-  font-family: "playfair display", serif;
+  font-family: "montserrat", serif;
   margin-left: 1em;
 }
 footer .CTA:hover {
