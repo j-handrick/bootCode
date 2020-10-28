@@ -1,0 +1,13 @@
+.jumbotron {
+  height: 100vh;
+}
+
+.jumbotron .container {
+  text-align: center;
+  align-items: center;
+  margin-top: 15em;
+}
+
+.chevron {
+  margin-top: 20%;
+}

@@ -17,10 +17,18 @@ body {
   font-family: 'Playfair display';
 }
 
+.name:hover {
+  border-top: 1px solid #49A0B5;
+}
+.nav-item:hover {
+    border-top: 1px solid #49A0B5;
+}
+
 .dropdown-menu a:hover {
   color: #49A0B5;
   background-color: #fffaef;
 }
+
 
 .linkedIn:hover {
   background-color: #49A0B5;
@@ -34,7 +42,7 @@ body {
 
 /* HEADER */
 .jumbotron {
-  background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BackgroundMask5.png");
+  background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/cayetano-gil-rguHxZmOF5U-unsplash.jpg");
   background-position: center;
   height: 99vh;
   padding-top: 1em;
@@ -48,7 +56,7 @@ body {
   text-align: center;
   margin-top: 5.2em;
   font-family: "Playfair Display", serif;
-  color: #fffaef;
+  color: #ffaef0;
   cursor: none;
 }
 
@@ -56,14 +64,11 @@ body {
   color: #49A0B5;
 }
 
-.jumbotron span {
-  color: #49A0B5;
-}
 
 .jumbotron p {
   text-align: center;
   font-family: 'montserrat', serif;
-  color: #fffaef;
+  color: #0f0c0a;
   cursor: arrow;
 }
 
@@ -73,7 +78,7 @@ body {
 }
 
 .arrow a:hover {
-  color: #49A0B5;
+  color: #ffaef0;
 }
 
 .active {
@@ -127,18 +132,25 @@ h1 {
   display: flex;
   text-align: center;
   justify-content: center;
-    border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 .cardContainer:hover {
-  border: 3px solid #fffaef;
+  border: .1px dotted #fffaef;
 }
 
 .cardContainer a {
   text-decoration: none;
 }
 
-.cardContainer a:hover {
-  color: #49A0B5;
+.cardContainer .HP:hover {
+  color: green;
+}
+.cardContainer .OA:hover {
+  color: orange;
+}
+.cardContainer .RFS:hover {
+  color: lightblue;
 }
 
 .cardContainer img {
@@ -170,6 +182,7 @@ h1 {
 footer nav {
   display: flex;
   width: 100vw;
+  height: 3.5em;
 }
 
 footer span {
