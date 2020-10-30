@@ -1,34 +1,42 @@
 body {
-  background: #fffaef;
+  background: #0f0c0a;
   scroll-behavior: smooth;
 }
 
 /* NAVIGATION */
 .navbar {
-  background-color: #fffaef;
+  background-color: #0f0c0a;
+  opacity: 75%;
 }
-
+.navbar-toggler {
+    -webkit-animation:colorchange 20s infinite alternate;
+}
 .nav-link {
   font-family: 'montserrat', serif;
   font-weight: 200;
+  color: #FFFEFD;
 }
-
+.name:hover {
+  color: #49A0B5;
+}
+.nav-link:hover {
+  color: #49A0B5;
+}
 .navbar-brand {
   font-family: 'Playfair display';
+  color: #FFFEFD;
 }
 
-.name:hover {
-  border-top: 1px solid #49A0B5;
+.dropdown-menu a {
+    background-color: #0f0c0a;
+    color: #FFFEFD;
+    font-family: 'montserrat', serif;
+    font-weight: 200;
 }
-.nav-item:hover {
-    border-top: 1px solid #49A0B5;
-}
-
 .dropdown-menu a:hover {
   color: #49A0B5;
-  background-color: #fffaef;
+  background-color: #0f0c0a;
 }
-
 
 .linkedIn:hover {
   background-color: #49A0B5;
@@ -54,16 +62,15 @@ body {
 
 .jumbotron h1 {
   text-align: center;
-  margin-top: 5.2em;
+  margin-top: 3.5em;
   font-family: "Playfair Display", serif;
-  color: #ffaef0;
   cursor: none;
+  color: #tan;
+  -webkit-animation:colorchange 20s infinite alternate;
 }
-
 .jumbotron h1:hover {
   color: #49A0B5;
 }
-
 
 .jumbotron p {
   text-align: center;
@@ -71,10 +78,14 @@ body {
   color: #0f0c0a;
   cursor: arrow;
 }
+.jumbotron span {
+    -webkit-animation:colorchange 30s infinite alternate;
+}
 
 /* BOUNCING ARROW -idk how this works but it just does... */
 .arrow a {
-  color: #fffaef;
+  color: #FFFEFD;
+  -webkit-animation:colorchange 3s infinite alternate;
 }
 
 .arrow a:hover {
@@ -111,21 +122,27 @@ body {
   }
 }
 
+
 /*PAGE ANIMATIONS*/
-h1 {
+#projectCards {
   text-align: center;
-  font-family: "Playfair Display", serif;
-  color: #0f0c0a;
+  font-family: "Playfair display", sans-serif;
+  font-weight: 200;
+  color: #FFFEFD;
   cursor: arrow;
+}
+
+#projectCards:hover {
+  -webkit-animation:colorchange 10s infinite alternate;
+  cursor: none;
 }
 
 .container-fluid {
   display: flex;
   width: 100vw;
 }
-
 .row {
-  margin: 10vh auto;
+  margin: 5.5vh auto;
 }
 
 .cardContainer {
@@ -136,13 +153,11 @@ h1 {
   margin-bottom: 15px;
 }
 .cardContainer:hover {
-  border: .1px dotted #fffaef;
+  border: .1px dotted #0f0c0a;
 }
-
 .cardContainer a {
   text-decoration: none;
 }
-
 .cardContainer .HP:hover {
   color: green;
 }
@@ -152,20 +167,18 @@ h1 {
 .cardContainer .RFS:hover {
   color: lightblue;
 }
-
 .cardContainer img {
-  height: 45%;
+  height: 50%;
 }
-
+.card-body {
+  color: #0f0c0a;
+  background-color: #FFFEFD;
+  align-content: space-between;
+}
 .card-title {
-  color: #fffaef;
+  color: #0f0c0a;
   font-family: "Playfair Display", serif;
   margin-bottom: 2em;
-}
-
-.card-body {
-  color: #fffaef;
-  background-color: #0f0c0a;
 }
 
 .card-subtitle {
@@ -179,48 +192,81 @@ h1 {
 }
 
 /* FOOTER */
-footer nav {
-  display: flex;
-  width: 100vw;
-  height: 3.5em;
+.contact {
+  color: #0f0c0a;
 }
-
-footer span {
-  font-style: italic;
-  font-family: "Playfair Display", serif;
+.contact:hover {
+  text-decoration: none;
+  color: #0f0c0a;
+  cursor: none;
 }
-
-footer span:hover {
-  color: #fffaef;
-  cursor: auto;
-}
-
-footer a {
-  color: #fffaef;
+/* FOOTER_CTA */
+.CTA {
+  color: #0f0c0a;
   font-style: regular;
   font-weight: 100;
   font-family: "montserrat", sans-serif;
+  -webkit-animation:colorchange 10s infinite alternate;
 }
-
-footer .CTA:hover {
-  color: #49A0B5;
+.CTA:hover {
+  color: #0f0c0a;
   cursor: pointer;
   text-decoration: none;
+  -webkit-animation: none;
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
-  .nav {
-    margin-left: 15vw;
-    margin-right: 15vw;
+@media (min-width: 540px max-width: 992px) {
+.navbar {
+
+}
+  .cardContainer {
+    margin: 2em auto;
   }
+
 }
 
 @media (max-width: 768px) {
   .jumbotron {
-    background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/BW/StandingDesert.jpeg") center;
     height: 95vh;
     padding-top: 1em;
     padding-bottom: 1em;
   }
 }
+
+/* COLORCHANGE WEBKIT */
+@-webkit-keyframes colorchange {
+      0% {
+        color: #1C1F1B;
+      }
+      10% {
+        color: #F48725;
+      }
+      20% {
+        color: #6088B2;
+      }
+      30% {
+        color: #C15955;
+      }
+      40% {
+        color: #EBD6C9;
+      }
+      50% {
+        color: #793884;
+      }
+      60% {
+        color: #173B00;
+      }
+      70% {
+        color: #48BCC9;
+      }
+      80% {
+        color: #C15955;
+      }
+      90% {
+        color: #696969;
+      }
+      100% {
+        color: #FDDEC3;
+      }
+    }
