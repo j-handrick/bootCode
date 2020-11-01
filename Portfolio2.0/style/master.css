@@ -6,10 +6,7 @@ body {
 /* NAVIGATION */
 .navbar {
   background-color: #0f0c0a;
-  opacity: 75%;
-}
-.navbar-toggler {
-    -webkit-animation:colorchange 20s infinite alternate;
+
 }
 .nav-link {
   font-family: 'montserrat', serif;
@@ -26,7 +23,6 @@ body {
   font-family: 'Playfair display';
   color: #FFFEFD;
 }
-
 .dropdown-menu a {
     background-color: #0f0c0a;
     color: #FFFEFD;
@@ -55,6 +51,7 @@ body {
   height: 99vh;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-bottom: 4em;
   background-size: cover;
   border-radius: 0;
   overflow: hidden;
@@ -67,9 +64,6 @@ body {
   cursor: none;
   color: #tan;
   -webkit-animation:colorchange 20s infinite alternate;
-}
-.jumbotron h1:hover {
-  color: #49A0B5;
 }
 
 .jumbotron p {
@@ -209,7 +203,7 @@ body {
   -webkit-animation:colorchange 10s infinite alternate;
 }
 .CTA:hover {
-  color: #0f0c0a;
+  color: #49A0B5;
   cursor: pointer;
   text-decoration: none;
   -webkit-animation: none;
