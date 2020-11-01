@@ -6,7 +6,7 @@ body {
 /* NAVIGATION */
 .navbar {
   background-color: #0f0c0a;
-
+  opacity: 95%;
 }
 .nav-link {
   font-family: 'montserrat', serif;

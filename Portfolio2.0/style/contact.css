@@ -1,28 +1,51 @@
+/* NAVIGATION */
 body {
   background: #0f0c0a;
-
+  scroll-behavior: smooth;
 }
+
 /* NAVIGATION */
 .navbar {
-  background-color: #fffaef;
+  background-color: #0f0c0a;
+  opacity: 95%;
 }
 .nav-link {
-    font-family: 'montserrat', serif;
-    font-weight: 200;
+  font-family: 'montserrat', serif;
+  font-weight: 200;
+  color: #FFFEFD;
+}
+.name:hover {
+  color: #49A0B5;
+}
+.nav-link:hover {
+  color: #49A0B5;
 }
 .navbar-brand {
   font-family: 'Playfair display';
+  color: #FFFEFD;
+}
+.dropdown-menu a {
+    background-color: #0f0c0a;
+    color: #FFFEFD;
+    font-family: 'montserrat', serif;
+    font-weight: 200;
 }
 .dropdown-menu a:hover {
   color: #49A0B5;
-  background-color: #fffaef;
+  background-color: #0f0c0a;
 }
+
 .linkedIn:hover {
-   background-color: #49A0B5; border-radius: 5px;
+  background-color: #49A0B5;
+  border-radius: 5px;
 }
+
 .instagram:hover {
-   background-color: #49A0B5; border-radius: 10px;
+  background-color: #49A0B5;
+  border-radius: 10px;
 }
+
+/* ELSE:: */
 .header {
   margin-top: 5em;
 }
@@ -41,6 +64,7 @@ p {
 }
 .card {
   display: block;
+  color: #0f0c0a;
   text-align: center;
   padding: 3%;
   margin: 5% auto;
@@ -48,27 +72,25 @@ p {
 }
 
 /* FOOTER */
-footer nav {
-  display: flex;
-  width: 100vw;
+.contact {
+  color: #FFFEFD;
 }
-footer span {
-  font-style: italic;
-  font-family: "Playfair Display", serif;
+.contact:hover {
+  text-decoration: none;
+  color: #FFFEFD;
+  cursor: none;
 }
-footer span:hover {
-  color: #fffaef;
-  cursor: auto;
-}
-footer a {
-  color: #fffaef;
+/* FOOTER_CTA */
+.CTA {
+  color: #FFFEFD;
   font-style: regular;
   font-weight: 100;
-  font-family: "montserrat", serif;
-  margin-left: 1em;
+  font-family: "montserrat", sans-serif;
+  -webkit-animation:colorchange 10s infinite alternate;
 }
-footer .CTA:hover {
+.CTA:hover {
   color: #49A0B5;
   cursor: pointer;
-    text-decoration: none;
+  text-decoration: none;
+  -webkit-animation: none;
 }
