@@ -46,7 +46,7 @@ body {
 
 /* HEADER */
 .jumbotron {
-  background: url("/Users/j.mac/Desktop/Ux:Ui /bootCode/Portfolio2.0/images/cayetano-gil-rguHxZmOF5U-unsplash.jpg");
+  background: url("../images/cayetano-gil-rguHxZmOF5U-unsplash.jpg");
   background-position: center;
   height: 99vh;
   padding-top: 1em;
